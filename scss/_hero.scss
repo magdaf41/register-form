@@ -60,46 +60,53 @@ body {
 }
 
 .form {
+	@include flex-center;
+	flex-direction: column;
+	gap: 15px;
 	width: 277px;
 	height: 343px;
 	background-color: $white;
-	@include flex-center;
-	flex-direction: column;
-	gap: 20px;
-	padding: 0 30px;
+	padding: 30px;
+	margin-bottom: 20px;
 	z-index: 20;
 }
 
-.full-input {
+.input-wrap {
 	position: relative;
-	font-size: 12px;
-	width: 100%;
-}
-
-.input {
-	width: 100%;
 	height: 30px;
-	border: 1px solid $grey;
-	padding: 0 20px;
+	margin-bottom: 10px;
+	color: $grey;
 }
 
-.label-error-box {
+.input-field {
+	outline: none;
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+.label {
 	position: absolute;
-	display: flex;
-	align-items: center;
-	height: 30px;
-	padding: 0 20px;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	font-weight: 500;
+	pointer-events: none;
+}
 
-	label {
-		width: 100px;
-	}
+.input-field.active + label {
+	display: none;
+}
+
+.error {
+	position: relative;
+	left: 10px;
+	font-size: 12px;
+	color: rgb(204, 40, 40);
+	font-weight: 700;
 }
 
 .sign-up-btn {
 	background-color: $pink;
 	box-shadow: 0px 0px 11px 2px $pink;
-}
-
-.error {
-	color: red;
 }

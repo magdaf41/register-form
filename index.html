@@ -21,43 +21,37 @@
                 <button class="header-btn">Log in</button>
             </header>
             <form class="form">
-                <div class="full-input">
-                    <div class="label-error-box">
-                        <label>Email</label>
-                        <p class="error error-email">test</p>
-                    </div>
-                    <input type="text" class="input input-email" />
+
+                <div class="input-wrap">
+                    <input class="input-field" type="text" name="input-email" id="input-email">
+                    <label class="label" for="input-email">Email</label>
+                    <p class="error error-email"></p>
                 </div>
 
-                <div class="full-input">
-                    <div class="label-error-box">
-                        <label>Full Name</label>
-                        <p class="error error-full-name"></p>
-                    </div>
-                    <input type="text" class="input input-full-name" />
+                <div class="input-wrap">
+                    <input class="input-field" type="text" name="input-full-name" id="input-full-name">
+                    <label class="label" for="input-full-name">Fullname</label>
+                    <p class="error error-full-name"></p>
                 </div>
 
-                <div class="full-input">
-                    <div class="label-error-box">
-                        <label>Username</label>
-                        <p class="error error-username"></p>
-                    </div>
-                    <input type="text" class="input input-username" />
+                <div class="input-wrap">
+                    <input class="input-field" type="text" name="input-user-name" id="input-user-name">
+                    <label class="label" for="input-user-name">Username</label>
+                    <p class="error error-user-name"></p>
                 </div>
 
-                <div class="full-input">
-                    <div class="label-error-box">
-                        <label>Password</label>
-                        <p class="error error-password"></p>
-                    </div>
-                    <input type="text" class="input input-password" />
+                <div class="input-wrap">
+                    <input class="input-field" type="text" name="input-password" id="input-password">
+                    <label class="label" for="input-password">Password</label>
+                    <p class="error error-password"></p>
                 </div>
-
 
                 <button class="sign-up-btn">Sign up</button>
             </form>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
