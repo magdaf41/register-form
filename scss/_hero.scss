@@ -62,7 +62,7 @@ body {
 .form {
 	@include flex-center;
 	flex-direction: column;
-	gap: 15px;
+	gap: 20px;
 	width: 277px;
 	height: 343px;
 	background-color: $white;
@@ -76,12 +76,14 @@ body {
 	height: 30px;
 	margin-bottom: 10px;
 	color: $grey;
+	width: 100%;
 }
 
 .input-field {
 	outline: none;
 	font-size: 14px;
 	padding: 5px 10px;
+	width: 100%;
 }
 
 .label {
@@ -99,11 +101,8 @@ body {
 }
 
 .error {
-	position: relative;
-	left: 10px;
-	font-size: 12px;
+	font-size: 10px;
 	color: rgb(204, 40, 40);
-	font-weight: 700;
 }
 
 .sign-up-btn {
