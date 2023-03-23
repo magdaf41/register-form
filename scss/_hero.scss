@@ -1,0 +1,105 @@
+body {
+	height: 100vh;
+	background-color: $black;
+	color: $grey;
+}
+
+.container {
+	width: 764px;
+	height: 438px;
+	background-color: $dark-violet;
+	@include flex-center;
+
+	@media (max-width: 576px) {
+		height: 550px;
+	}
+}
+
+.wrapper {
+	width: 540px;
+	height: 290px;
+	background-color: $light-violet;
+	@include flex-center;
+	justify-content: space-around;
+
+	@media (max-width: 576px) {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		padding: 20px 0;
+	}
+}
+
+.parent-element {
+	position: absolute;
+	filter: drop-shadow(0.4rem 0.4rem 1rem $dark-violet);
+	transform: rotate(180deg);
+	opacity: 20%;
+}
+
+.clipped-element {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: $light-violet;
+	clip-path: polygon(0 0, 50% 0, 100% 50%, 50% 100%, 0 100%, 50% 50%);
+}
+
+.header {
+	@include flex-center;
+	flex-direction: column;
+	gap: 15px;
+
+	@media (max-width: 576px) {
+		margin-bottom: 20px;
+	}
+}
+
+.header-btn {
+	border: 1px solid $white;
+}
+
+.form {
+	width: 277px;
+	height: 343px;
+	background-color: $white;
+	@include flex-center;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0 30px;
+	z-index: 20;
+}
+
+.full-input {
+	position: relative;
+	font-size: 12px;
+	width: 100%;
+}
+
+.input {
+	width: 100%;
+	height: 30px;
+	border: 1px solid $grey;
+	padding: 0 20px;
+}
+
+.label-error-box {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding: 0 20px;
+
+	label {
+		width: 100px;
+	}
+}
+
+.sign-up-btn {
+	background-color: $pink;
+	box-shadow: 0px 0px 11px 2px $pink;
+}
+
+.error {
+	color: red;
+}
